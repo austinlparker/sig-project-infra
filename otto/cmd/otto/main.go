@@ -17,6 +17,9 @@ import (
 )
 
 func main() {
+	// Display Otto ASCII art banner with version
+	internal.DisplayBannerWithVersion(internal.Version)
+
 	// Create root context
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
